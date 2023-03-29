@@ -1,0 +1,4 @@
+name: UltraAPI
+version: '${version}'
+main: com.prixix.ultraapi.UltraAPI
+api-version: 1.19
