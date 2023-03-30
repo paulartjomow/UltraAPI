@@ -26,7 +26,7 @@ public class ItemStackSerializer {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return new byte[0];
     }
 
     public static ItemStack[] itemStackArrayFromBase64(byte[] data) throws IOException {
@@ -44,7 +44,7 @@ public class ItemStackSerializer {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        return null;
+        return new ItemStack[0];
     }
 
     public static byte[] itemStackToBase64(ItemStack item) throws IllegalStateException {
@@ -57,7 +57,7 @@ public class ItemStackSerializer {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return new byte[0];
     }
 
     public static ItemStack itemStackFromBase64(byte[] data) throws IOException {
