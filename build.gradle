@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id "org.sonarqube" version "4.3.1.3277"
 }
 
 group = 'com.prixix'
@@ -11,10 +10,6 @@ repositories {
     maven {
         name = "papermc-repo"
         url = "https://repo.papermc.io/repository/maven-public/"
-    }
-    maven {
-        name = "sonatype"
-        url = "https://oss.sonatype.org/content/groups/public/"
     }
 }
 
@@ -45,11 +40,5 @@ processResources {
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {
         expand props
-    }
-}
-
-sonar {
-    properties {
-        property "sonar.projectKey", "Prixix_UltraAPI_AYctxmmuZswrylMNygRY"
     }
 }
